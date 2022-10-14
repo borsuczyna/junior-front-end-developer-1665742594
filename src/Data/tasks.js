@@ -25,7 +25,6 @@ export default [
                 created_at: 1665744229,
                 title: 'New sprint, tasks and intro information.',
                 content: 'Hi Eric, congratulations on completing the previous assignment. This time you will have to focus on...',
-                active: true
             },
             {
                 author: 'Kirsten Aniston',

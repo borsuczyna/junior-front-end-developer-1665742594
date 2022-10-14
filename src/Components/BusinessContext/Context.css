@@ -1,6 +1,5 @@
 .context-element {
     background-color: white;
-    min-height: 6.5rem;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
