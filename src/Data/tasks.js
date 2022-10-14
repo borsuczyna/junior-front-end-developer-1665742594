@@ -17,6 +17,7 @@ export default [
     {
         title: 'Connect Admin with Frontend',
         status: 'active',
+        active: true,
         businessContexts: [
             {
                 isNew: true,
@@ -24,6 +25,7 @@ export default [
                 created_at: 1665744229,
                 title: 'New sprint, tasks and intro information.',
                 content: 'Hi Eric, congratulations on completing the previous assignment. This time you will have to focus on...',
+                active: true
             },
             {
                 author: 'Kirsten Aniston',
@@ -36,6 +38,7 @@ export default [
                 created_at: 1665744229,
                 title: 'New sprint, tasks and intro information.',
                 content: 'Hi Eric, congratulations on completing the previous assignment. This time you will have to focus on...',
+                readen: true
             }
         ],
     },

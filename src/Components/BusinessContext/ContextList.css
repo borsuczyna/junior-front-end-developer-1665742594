@@ -1,0 +1,25 @@
+.context-list {
+    width: 40%;
+    max-width: 25rem;
+    height: calc(100% - 1rem);
+    border-radius: 0px 0px 0px 10px;
+    background-color: var(--background-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    margin-inline: 0.25rem;
+
+    padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .context-list {
+        width: calc(100% - 1.5rem);
+        max-width: none;
+        min-height: 10rem;
+        height: auto;
+        border-radius: 0px 0px 10px 10px;
+    }
+}

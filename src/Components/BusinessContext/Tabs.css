@@ -1,13 +1,25 @@
-.task {
-    font-size: 0.9rem;
+.tabs {
+    padding-inline: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid var(--background-color);
+}
+
+.context-tab {
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: 500;
-    line-height: 18px;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 19px;
+    height: 2.2rem;
+    padding-block: 1rem;
 
     display: flex;
-    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    cursor: pointer;
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -16,24 +28,9 @@
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
-
-    transition: 0.2s;
 }
 
-.taskCheckSquare {
-    width: 1rem;
-    height: 1.1rem;
-    border-radius: 0.125rem;
-}
-
-.task svg {
-    width: 1rem;
-}
-
-.task-accessible {
-    cursor: pointer;
-}
-
-.task-accessible:hover {
-    background-color: rgba(0, 179, 255, 0.227);
+.context-active {
+    color: #0165FF;
+    border-bottom: 2px solid #0165FF;
 }

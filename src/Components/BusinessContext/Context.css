@@ -1,0 +1,60 @@
+.context-element {
+    background-color: white;
+    min-height: 6.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    padding: 1rem;
+
+    cursor: pointer;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+    transition: 0.2s;
+}
+
+.context-element:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.context-readen {
+    background-color: transparent;
+}
+
+.context-element-active {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.context-top {
+    color: #6B778C;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 0.8rem;
+    font-weight: 600;
+    gap: 1rem;
+}
+
+.context-new {
+    background-color: #0165FF !important;
+    color: white;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+}
+
+.context-content {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #6B778C;
+}

@@ -1,4 +1,4 @@
-import logo from './../../Data/logo.svg';
+import logo from './../../Icons/logo.svg';
 
 function Logo({height}) {
     return (
