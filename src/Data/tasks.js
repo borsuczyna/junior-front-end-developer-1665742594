@@ -43,5 +43,5 @@ export default [
         title: 'Book Review Feature',
         status: 'blocked',
         businessContexts: [],
-    }
+    },
 ];

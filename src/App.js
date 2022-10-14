@@ -4,6 +4,8 @@ import Logo from './Components/Logo/Logo';
 import Board from './Components/Tasks/Board';
 import TaskPanel from './Components/Tasks/TaskPanel';
 
+import tasks from './Data/tasks';
+
 function App() {
     return (
         <div className="App">
@@ -12,9 +14,7 @@ function App() {
             </Header>
 
             <Board>
-                <TaskPanel title="YOUR TASKS">
-
-                </TaskPanel>
+                <TaskPanel title="YOUR TASKS" tasks={tasks}/>
             </Board>
         </div>
     );

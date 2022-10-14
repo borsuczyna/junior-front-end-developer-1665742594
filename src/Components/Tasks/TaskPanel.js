@@ -1,9 +1,8 @@
 import './TaskPanel.css';
+import './../Scrollbar.css';
 import Task from './Task';
 
-import tasks from './../../Data/tasks';
-
-function TaskPanel({ title }) {
+function TaskPanel({ title, tasks }) {
     return (
         <div className="taskPanel">
             <div className='taskTitle'>
