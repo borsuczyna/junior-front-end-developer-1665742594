@@ -1,8 +1,8 @@
 import './Task.css';
 
-import arrow from './../../Data/arrow.svg';
-import arrowRight from './../../Data/arrow-right.svg';
-import lock from './../../Data/lock.svg';
+import arrow from './../../Icons/arrow.svg';
+import arrowRight from './../../Icons/arrow-right.svg';
+import lock from './../../Icons/lock.svg';
 
 const taskData = {
     'completed': {
@@ -10,7 +10,6 @@ const taskData = {
     },
     'active': {
         icon: arrowRight,
-        weight: 600
     },
     'blocked': {
         icon: lock,
@@ -18,13 +17,15 @@ const taskData = {
     },
 }
 
-function Task({ task }) {
+function Task({ task, index, setTask }) {
     return (
-        <div key={task.title} className="task">
+        <div key={task.title} className={"task " + (task.status != 'blocked' ? 'task-accessible' : '')} onClick={() => {
+            setTask(index)
+        }}>
             <img src={taskData[task.status].icon} alt="status"/>
             
             <div style={{
-                fontWeight: taskData[task.status].weight || 500,
+                fontWeight: task.active ? 600 : 500,
                 color: taskData[task.status].color || 'black'
             }}>
                 {task.title}

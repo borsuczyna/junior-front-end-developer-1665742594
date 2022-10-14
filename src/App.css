@@ -2,3 +2,9 @@
     height: calc(100vh - 1rem);
     padding: 0.5rem 2rem 0.5rem 2rem;
 }
+
+@media (max-width: 768px) {
+    .App {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+}

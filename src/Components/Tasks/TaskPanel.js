@@ -2,7 +2,7 @@ import './TaskPanel.css';
 import './../Scrollbar.css';
 import Task from './Task';
 
-function TaskPanel({ title, tasks }) {
+function TaskPanel({ title, tasks, setActiveTask }) {
     return (
         <div className="taskPanel">
             <div className='taskTitle'>
@@ -10,8 +10,8 @@ function TaskPanel({ title, tasks }) {
             </div>
 
             <div className='taskList'>
-                {tasks.map(task => 
-                    <Task task={task}/>
+                {tasks.map((task, index) => 
+                    <Task task={task} key={index} setTask={setActiveTask} index={index}/>
                 )}
             </div>
         </div>
