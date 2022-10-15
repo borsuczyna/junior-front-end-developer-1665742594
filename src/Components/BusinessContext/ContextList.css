@@ -1,6 +1,6 @@
 .context-list {
     width: 40%;
-    min-width: 20rem;
+    min-width: 25rem;
     max-width: 25rem;
     height: calc(100% - 1rem);
     border-radius: 0px 0px 0px 10px;
@@ -19,6 +19,7 @@
 @media (max-width: 768px) {
     .context-list {
         width: calc(100% - 1.5rem);
+        min-width: 0rem;
         max-width: none;
         height: auto;
         overflow-y: scroll;

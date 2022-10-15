@@ -1,0 +1,18 @@
+.Footer {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.Footer-element {
+    display: flex;
+    color: #6B778C;
+    font-size: 0.8rem;
+    gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .Footer-element {
+        display: none;
+    }
+}
