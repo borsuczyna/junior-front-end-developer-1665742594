@@ -1,0 +1,24 @@
+.context-details {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 1px solid #D4D6DA;
+}
+
+.no-context {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.details-author {
+    font-size: 1.1rem;
+    font-weight: 600;
+}

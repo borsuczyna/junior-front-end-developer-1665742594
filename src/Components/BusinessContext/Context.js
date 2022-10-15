@@ -1,5 +1,4 @@
 import './Context.css';
-import timeSince from './../../Utils/date-diff';
 
 function Context({ context, setActiveContext, index }) {
     var className = 'context-element';
@@ -10,12 +9,10 @@ function Context({ context, setActiveContext, index }) {
         day: 'numeric'
     }).split(',')[1];
 
-    if(context.readen) {
-        className += ' context-readen';
-    }
-
     if(context.active) {
         className += ' context-element-active';
+    } if(context.isNew) {
+        className += ' context-element-new';
     }
 
     return (

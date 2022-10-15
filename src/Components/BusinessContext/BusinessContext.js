@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import './BusinessContext.css';
 import ContextList from './ContextList';
+import ContextDetails from './ContextDetails';
 
 const tabs = [
     {
@@ -15,13 +16,14 @@ const tabs = [
     // },
 ]
 
-function BusinessContext({ contexts, setActiveContext }) {
+function BusinessContext({ contexts, setActiveContext, currentContext }) {
     return (
         <div className="context">
             <Tabs tabs={tabs}/>
 
             <div className="context-board">
                 <ContextList contexts={contexts} setActiveContext={setActiveContext}/>
+                <ContextDetails context={currentContext}/>
             </div>
         </div>
     );
