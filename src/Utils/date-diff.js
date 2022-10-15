@@ -1,4 +1,4 @@
-function timeSince(date) {
+export function timeSince(date) {
     var seconds = Math.floor((new Date() - date) / 1000);
 
     var interval = Math.floor(seconds / 31536000);
@@ -25,4 +25,14 @@ function timeSince(date) {
     return Math.floor(seconds) + " seconds";
 }
 
-export default timeSince;
+export function relativeDays(timestamp) {
+    const rtf = new Intl.RelativeTimeFormat('en', {
+        numeric: 'auto',
+    });
+    const oneDayInMs = 1000 * 60 * 60 * 24;
+    const daysDifference = Math.round(
+        (timestamp - new Date().getTime()) / oneDayInMs
+    );
+  
+    return rtf.format(daysDifference, 'day');
+}

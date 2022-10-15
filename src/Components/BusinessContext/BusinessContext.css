@@ -5,12 +5,14 @@
 }
 
 .context-board {
+    display: flex;
     flex-grow: 1;
     height: calc(100% - 4.6rem);
 }
 
 @media (max-width: 768px) {
     .context-board {
+        flex-direction: column;
         height: calc(100vh - 5rem);
     }
 }

@@ -1,5 +1,4 @@
 .context-element {
-    background-color: white;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -24,12 +23,9 @@
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
-.context-readen {
-    background-color: transparent;
-}
-
 .context-element-active {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    background-color: white;
 }
 
 .context-top {
@@ -43,12 +39,16 @@
     gap: 1rem;
 }
 
+.context-element-new {
+    background-color: white;
+}
+
 .context-new {
     background-color: #0165FF !important;
     color: white;
     border-radius: 0.25rem;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     padding: 0.2rem 0.4rem;
 }
 
