@@ -5,7 +5,7 @@ You really impressed us during the interview process, and we'd like to offer you
 Here's the project overview:
 You'll be responsible for building a database and page for recording and displaying book ratings. We'd like to work in two week-long sprints, we've already given you a head start and prepared your tasks to deliver in your first sprint.`;
 
-export default [
+const tasks = [
     {
         title: 'Application Setup',
         status: 'completed',
@@ -104,3 +104,5 @@ export default [
         businessContexts: [],
     },
 ];
+
+export default tasks

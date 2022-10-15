@@ -1,5 +1,4 @@
 import Tabs from './Tabs';
-import { useState } from 'react';
 
 import './BusinessContext.css';
 import ContextList from './ContextList';

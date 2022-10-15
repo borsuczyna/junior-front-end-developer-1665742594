@@ -16,10 +16,10 @@ function App() {
     const [currentContext, setCurrentContext] = useState(contexts.find(value => value.active), false);
 
     const setActiveTask = (id) => {
-        if(currentTasks[id].status == 'blocked') return;
+        if(currentTasks[id].status === 'blocked') return;
 
         setTasks(currentTasks.map((task, index) => {
-            task.active = id == index;
+            task.active = id === index;
             return task;
         }));
 
@@ -30,8 +30,8 @@ function App() {
     
     const setActiveContext = (id) => {
         setContexts(contexts.map((value, index) => {
-            value.active = id == index;
-            value.isNew = (id == index) ? false : value.isNew;
+            value.active = id === index;
+            value.isNew = (id === index) ? false : value.isNew;
             return value;
         }));
 

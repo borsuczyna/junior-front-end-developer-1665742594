@@ -19,7 +19,7 @@ const taskData = {
 
 function Task({ task, index, setTask }) {
     return (
-        <div key={task.title} className={"task " + (task.status != 'blocked' ? 'task-accessible' : '')} onClick={() => {
+        <div key={task.title} className={"task " + (task.status !== 'blocked' ? 'task-accessible' : '')} onClick={() => {
             setTask(index)
         }}>
             <img src={taskData[task.status].icon} alt="status"/>

@@ -43,6 +43,7 @@ function ContextDetails({ context }) {
                         style={{
                             width: '42px'
                         }}
+                        alt=''
                     />
 
                     <div style={{
