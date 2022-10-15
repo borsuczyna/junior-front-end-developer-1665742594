@@ -33,6 +33,7 @@
 
 @media (max-width: 768px) {
     .taskPanel {
+        min-width: 0rem;
         width: auto;
         flex-grow: 1;
     }

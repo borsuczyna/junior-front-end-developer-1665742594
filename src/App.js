@@ -5,6 +5,7 @@ import Logo from './Components/Logo/Logo';
 import Board from './Components/Board/Board';
 import TaskPanel from './Components/Tasks/TaskPanel';
 import BusinessContext from './Components/BusinessContext/BusinessContext';
+import Footer from './Components/Footer/Footer';
 
 import tasks from './Data/tasks';
 
@@ -51,6 +52,11 @@ function App() {
                     currentContext={currentContext}
                 />
             </Board>
+            
+            <Footer
+                left={['Terms of service', 'Privacy policy', 'Copyright']}
+                right={['nerds.family Version 1.2', 'Last update 15/10/2022']}
+            />
         </div>
     );
 }

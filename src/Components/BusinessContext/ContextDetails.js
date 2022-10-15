@@ -40,6 +40,9 @@ function ContextDetails({ context }) {
                     <img
                         src={require(`./../../Avatars/${context.avatar}.png`)}
                         className='avatar'
+                        style={{
+                            width: '42px'
+                        }}
                     />
 
                     <div style={{
@@ -62,11 +65,7 @@ function ContextDetails({ context }) {
 
                     </div>
                 </div>
-                <div style={{
-                    marginLeft: '3.8rem',
-                    maxWidth: 'max-content',
-                    color: '#6B778C'
-                }}>
+                <div className='context-element-details'>
                     {context.details}
                 </div>
             </div>

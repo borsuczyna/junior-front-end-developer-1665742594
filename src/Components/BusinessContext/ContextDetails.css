@@ -22,3 +22,19 @@
     font-size: 1.1rem;
     font-weight: 600;
 }
+
+.context-element-details {
+    margin-left: 3.8rem;
+    margin-top: 0.3rem;
+    max-width: max-content;
+    color: #6B778C;
+}
+
+@media (max-width: 768px) {
+    .context-element-details {
+        margin-left: 0rem;
+        margin-top: 0.3rem;
+        max-width: max-content;
+        color: #6B778C;
+    }
+}
